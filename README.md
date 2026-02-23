@@ -1,5 +1,6 @@
 // Code is stored as 13template.java
-import java.text.*;
+
+import java.text.CollationElementIterator;
 
 
 
@@ -16,11 +17,14 @@ public class timeMethods{
         double totalTime = 0.0;
         int n = N;
         int repetition, repetitions = 30;
-        Hashtable<Integer,String>array=new Hashtable<Integer,String>();
-        int [] array=new int[32654];
+        Hashtable<Integer,String>Array=new Hashtable<Integer,String>();
+
+
+        int [] array=new int[30];
 
         runTime = 0;
         for(repetition = 0; repetition < repetitions; repetition++) {
+
             start = System.currentTimeMillis();
 
             // call the procedures to time here:
@@ -56,10 +60,7 @@ public class timeMethods{
         System.out.println();
         System.out.println(); }	}
 
-static void oneofyourMethods(int n, int linearsearch,
-                             int binarysearch ) {
 
-                             }
  public static int linearsearch(int n,int []array){
     for(int i=1;i<array.length;i++){
         if(array[i]==n){
@@ -80,11 +81,10 @@ static void oneofyourMethods(int n, int linearsearch,
         }
         else if(array[middle]<high){
             int high_middle=middle+1;
-            int middle=middle+1;
 
         }
     }
     return -1;
  }
 // The declarations and body of your method / s
-// The
+// The final statement of this code.} }
